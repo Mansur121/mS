@@ -67,8 +67,8 @@ All microservices register here on startup and discover each other by name — n
 ### 🔵 Apigateway
 Single entry point for all client requests. Routes traffic to the correct microservice using service names from Eureka.
 
-- **Port:** `8765`
-- **Usage:** `http://localhost:8765/{service-route}/{endpoint}`
+- **Port:** `8083`
+- **Usage:** `http://localhost:8083/{service-route}/{endpoint}`
 
 ### 🟡 QuestionService
 Manages the question bank used by quizzes.
