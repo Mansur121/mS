@@ -1,0 +1,58 @@
+2026-05-03 00:22:52.691 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.question.QuestionServiceApplicationTests]: QuestionServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-03 00:22:52.843 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.question.QuestionServiceApplication for test class com.question.QuestionServiceApplicationTests
+2026-05-03 00:22:53.624 [main] INFO  c.q.QuestionServiceApplicationTests - Starting QuestionServiceApplicationTests using Java 21.0.9 with PID 29976 (started by 91951 in D:\Spring\mS\QuestionService)
+2026-05-03 00:22:53.625 [main] INFO  c.q.QuestionServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-05-03 00:22:54.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-03 00:22:55.121 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 1 JPA repository interface.
+2026-05-03 00:22:55.387 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f0173c6b-26e9-337d-beb5-13f49a84a80e
+2026-05-03 00:22:55.785 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-03 00:22:56.056 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:questiondb user=QUESTIONS
+2026-05-03 00:22:56.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-03 00:22:56.130 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-03 00:22:56.229 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-05-03 00:22:56.281 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-03 00:22:56.671 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-03 00:22:56.793 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-03 00:22:57.763 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-03 00:22:57.806 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03 00:22:58.343 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-03 00:22:59.398 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-05-03 00:22:59.442 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-03 00:22:59.456 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-05-03 00:22:59.554 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-05-03 00:22:59.587 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-05-03 00:22:59.590 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-05-03 00:22:59.604 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-05-03 00:23:00.100 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-05-03 00:23:00.104 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-05-03 00:23:00.106 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-03 00:23:00.109 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1777747980108 with initial instances count: 1
+2026-05-03 00:23:00.114 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application QUESTION-SERVICE with eureka with status UP
+2026-05-03 00:23:00.115 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1777747980115, current=UP, previous=STARTING]
+2026-05-03 00:23:00.118 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_QUESTION-SERVICE/Mansur:Question-Service:8082: registering service...
+2026-05-03 00:23:00.139 [main] INFO  c.q.QuestionServiceApplicationTests - Started QuestionServiceApplicationTests in 6.893 seconds (process running for 8.532)
+2026-05-03 00:23:00.184 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_QUESTION-SERVICE/Mansur:Question-Service:8082 - registration status: 204
+2026-05-03 00:23:00.797 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application QUESTION-SERVICE with eureka with status DOWN
+2026-05-03 00:23:00.797 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1777747980797, current=DOWN, previous=UP]
+2026-05-03 00:23:00.798 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_QUESTION-SERVICE/Mansur:Question-Service:8082: registering service...
+2026-05-03 00:23:00.808 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_QUESTION-SERVICE/Mansur:Question-Service:8082 - registration status: 204
+2026-05-03 00:23:00.810 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03 00:23:00.816 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-03 00:23:00.820 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-03 00:23:00.820 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-05-03 00:23:03.832 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-05-03 00:23:03.856 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_QUESTION-SERVICE/Mansur:Question-Service:8082 - deregister  status: 200
+2026-05-03 00:23:03.857 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
