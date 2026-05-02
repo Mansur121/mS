@@ -18,7 +18,7 @@ A production-ready microservices system built with Spring Boot and Spring Cloud.
    ┌──────────▼──────┐  ┌───────▼────────┐  ┌─────▼────────────┐
    │  Question-      │  │    Quiz-       │  │   (more services │
    │  Service        │  │    Service     │  │    coming soon)  │
-   │  Port: 8082     │  │  Port: 8083    │  └──────────────────┘
+   │  Port: 8082     │  │  Port: 8081    │  └──────────────────┘
    └──────────┬──────┘  └───────┬────────┘
               │                  │
               └────────┬─────────┘
@@ -79,8 +79,8 @@ Manages the question bank used by quizzes.
 ### 🔴 QuizService
 Orchestrates quizzes. Calls QuestionService via OpenFeign to fetch questions.
 
-- **Port:** `8083`
-- **Metrics:** `http://localhost:8083/actuator/prometheus`
+- **Port:** `8081`
+- **Metrics:** `http://localhost:8081/actuator/prometheus`
 
 ---
 
@@ -168,12 +168,12 @@ scrape_configs:
   - job_name: 'quiz-service'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['localhost:8083']
+      - targets: ['localhost:8081']
 
   - job_name: 'api-gateway'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['localhost:8765']
+      - targets: ['localhost:8083']
 ```
 
 Start Prometheus:
